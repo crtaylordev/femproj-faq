@@ -1,0 +1,87 @@
+/* Universal */
+
+@font-face {
+    font-family: 'WorkSans';
+    src: url('../fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+}
+
+html, body, main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-image: url(../images/background-pattern-desktop.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(275, 100%, 97%);
+    font-family: 'WorkSans', sans-serif;
+    color: hsl(292, 42%, 14%);
+}
+
+/* FAQ Component */
+
+.faq-card {
+    width: 40%;  
+    padding: 2.5rem 2.5rem 1rem 2.5rem;
+    border-radius: 0.5rem;
+    background-color: hsl(0, 0%, 100%);
+}
+.faq-header {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.faq-header h1 {
+    margin-left: 1rem;
+}
+
+.faq-card ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#accordion button {
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    border: none;
+    background-color: hsl(0, 0%, 100%);
+    text-align: left;
+    color:hsl(292, 42%, 14%);
+}
+
+#accordion li {
+    border-bottom: 1px solid hsl(275, 100%, 97%);
+ }
+ 
+#accordion li:last-child {
+    border: none;
+}
+
+.acc-item-content {
+    max-height: 0;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    color: hsl(292, 16%, 49%);
+}
+
+/* Footer */
+
+.footer {
+    margin: 1rem;
+}
+
+/* Media Queries */
